@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -121,7 +122,23 @@
         }
         
         .btn-operator {
-            background: rgba(255, 255, 255, 0.15);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        }
+        
+        .btn-divide {
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+        }
+        
+        .btn-multiply {
+            background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+        }
+        
+        .btn-subtract {
+            background: linear-gradient(135deg, #ffc3a0 0%, #ffafbd 100%);
+        }
+        
+        .btn-add {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
         }
         
         .btn-special {
@@ -142,7 +159,7 @@
         }
         
         .btn-delete {
-            background: rgba(88, 86, 214, 0.3);
+            background: rgba(255, 69, 58, 0.3);
         }
         
         .footer {
@@ -168,7 +185,23 @@
         }
         
         .dark-mode .btn-operator {
-            background: rgba(65, 65, 65, 0.7);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        }
+        
+        .dark-mode .btn-divide {
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+        }
+        
+        .dark-mode .btn-multiply {
+            background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+        }
+        
+        .dark-mode .btn-subtract {
+            background: linear-gradient(135deg, #ffc3a0 0%, #ffafbd 100%);
+        }
+        
+        .dark-mode .btn-add {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
         }
         
         .dark-mode .btn-special {
@@ -217,30 +250,30 @@
             <button class="btn btn-clear" data-action="clear">AC</button>
             <button class="btn btn-delete" data-action="delete">DEL</button>
             <button class="btn btn-special" data-action="percent">%</button>
-            <button class="btn btn-operator" data-action="divide">/</button>
+            <button class="btn btn-divide btn-operator" data-action="divide">/</button>
             
             <button class="btn" data-number="7">7</button>
             <button class="btn" data-number="8">8</button>
             <button class="btn" data-number="9">9</button>
-            <button class="btn btn-operator" data-action="multiply">×</button>
+            <button class="btn btn-multiply btn-operator" data-action="multiply">×</button>
             
             <button class="btn" data-number="4">4</button>
             <button class="btn" data-number="5">5</button>
             <button class="btn" data-number="6">6</button>
-            <button class="btn btn-operator" data-action="subtract">−</button>
+            <button class="btn btn-subtract btn-operator" data-action="subtract">−</button>
             
             <button class="btn" data-number="1">1</button>
             <button class="btn" data-number="2">2</button>
             <button class="btn" data-number="3">3</button>
-            <button class="btn btn-operator" data-action="add">+</button>
+            <button class="btn btn-add btn-operator" data-action="add">+</button>
             
-            <button class="btn" data-number="0">0</button>
+            <button class="btn btn-zero" data-number="0">0</button>
             <button class="btn" data-number="00">00</button>
+            <button class="btn btn-special" data-action="sign">+/-</button>
             <button class="btn" data-action="decimal">.</button>
-            <button class="btn btn-equals" data-action="calculate">=</button>
             
             <button class="btn btn-special" data-action="sqrt">√</button>
-            <button class="btn btn-special" data-action="sign">+/-</button>
+            <button class="btn btn-equals" data-action="calculate">=</button>
         </div>
         
         <div class="footer">
@@ -467,4 +500,4 @@
         updateDisplay();
     </script>
 </body>
-  </html>
+</html>
